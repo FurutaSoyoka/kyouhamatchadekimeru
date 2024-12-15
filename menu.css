@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+.teitle {
+    height: 310px;
+    background-image: url(../images/menu/bg-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.teitle h1 {
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.teitle p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.item-list {
+    width: 930px;
+    max-width: 90%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    gap: 95px;
+    row-gap: 70px;
+    justify-content: center;
+}
+
+.item-list dl {
+    margin-top: 20px;
+}
+
+.item-list dt {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item-list dd {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 10px;
+    text-align: left;  /* 右揃え */
+    margin: 0;          /* 上下左右のマージンをリセット */
+    padding: 0;         
+}
+
+.item-list .price {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.feature-text h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#unique-link {
+    font-weight: bold;
+    font-size: 13px;
+    padding: 5px 10px; /* リンクに余白を追加 */
+    color: #4169e1; /* 背景色を黄色に */
+}
+
+#unique-link:hover {
+    color: #00008b; /* ホバー時に背景色をオレンジに */
+}
+
+
+
+.footer {
+    margin-top: 100px;
+}
+
+@media (max-width: 800px) {
+    .item-list {
+        margin-top: 45px;
+        row-gap: 40px;
+    }
+}
